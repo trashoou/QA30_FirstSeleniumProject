@@ -1,4 +1,4 @@
-package DemoWebShoopHW;
+package lesson_4_homework;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
