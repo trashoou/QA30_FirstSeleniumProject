@@ -4,12 +4,15 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+
 public class CreateAccountTests extends TestBase {
+
+
     @Test
-    public void createNewAccountPositiveTest() {
-        driver.findElement(By.cssSelector("[href='/register']"));
+    public void createNewAccPositiveTest() {
+        driver.findElement(By.cssSelector("[href='/register']")).click();
         //
-        driver.findElement(By.id("gender-male")).click();
+        driver.findElement(By.cssSelector("[for='gender-male']")).click();
         //
         driver.findElement(By.name("FirstName")).click();
         driver.findElement(By.name("FirstName")).clear();
